@@ -1,0 +1,6 @@
+printTree() {
+    console.log('\nGit Repository:');
+    for (const [branch, commits] of Object.entries(this.branches)) {
+      console.log(`  ${branch}: ${commits.join(', ')}`);
+    }
+  }
